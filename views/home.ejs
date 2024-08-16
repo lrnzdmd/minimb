@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home</title>
+  </head>
+  <body
+    class="flex flex-col h-screen items-center bg-slate-800 text-zinc-50 gap-4"
+  >
+  <div class="flex justify-between w-full h-16 p-4 bg-slate-700 items-center">
+    <a href="/" class="text-2xl font-bold self-start">
+        Mini Message Board
+      </a>
+    <a href="/new" class="bg-slate-600 border border-slate-400 p-2 rounded-md">New Message</a>
+  </div>
+  <% messages.forEach(element => { %>
+    <%- include("msgCard", {message: element}) %>
+  <% }) %>
+        
+    
+
+
+
+
+
+  </body>
+</html>
