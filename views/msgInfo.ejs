@@ -17,10 +17,10 @@
       class="bg-zinc-500 rounded-lg bg-opacity-70 flex flex-col w-1/4 p-3 border border-zinc-300 gap-4 text-xl"
     >
       <p><b class="text-teal-400">ID: </b><%=message.id%></p>
-      <p><b class="text-teal-400">Username: </b> <%=message.user%></p>
-    <p><b class="text-teal-400">Message: </b> <%=message.text%></p>
+      <p><b class="text-teal-400">Username: </b> <%=message.username%></p>
+    <p><b class="text-teal-400">Message: </b> <%=message.message%></p>
         
-        <p><b class="text-teal-400">Posted on: </b> <%=message.added%></p>
+        <p><b class="text-teal-400">Posted on: </b> <%=message.added.substring(0, 19)%></p>
     </div>
   
 
